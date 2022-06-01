@@ -21,6 +21,7 @@ header {
     top: 0;
     padding: 1em 0em 1em 0em;
     border: 0em 1em 1em 1em;
+    background-image: linear-gradient(to bottom, #083359, #6cc5d9)
 }
 
 header div nav ul {
@@ -102,7 +103,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: whitesmoke;
+    color: #083359;
     border-style: solid;
     border-radius: 1em;
     padding: 0.3em;
