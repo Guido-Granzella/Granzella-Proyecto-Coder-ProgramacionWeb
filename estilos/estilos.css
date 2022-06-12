@@ -12,7 +12,7 @@ html {
     margin: 0;
 }
 
-header {
+/* header {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -22,9 +22,17 @@ header {
     padding: 1em 0em 1em 0em;
     border: 0em 1em 1em 1em;
     background-image: linear-gradient(to bottom, #083359, #6cc5d9)
+} */
+
+nav{    
+    background-color: #083359;
+    padding: 1em 0em 1em 0em;
+    border: 0em 1em 1em 1em;
+    background-image: linear-gradient(to bottom, #083359, #6cc5d9)
 }
 
-header div nav ul {
+
+/* header div nav ul {
     display: flex;
     font-size: 1em;
 }
@@ -32,13 +40,13 @@ header div nav ul {
 header div {
     display: flex;
     align-items: center;
-}
+} */
 
 picture img {
     height: 6em;
 }
 
-header nav ul li a {
+/* header nav ul li a {
     margin: 0.5em;
     border-style: solid;
     border-radius: 1em;
@@ -46,7 +54,7 @@ header nav ul li a {
     border-color: #6cc5d9;
     color: #083359;
     background-color: #6cc5d9;
-}
+} */
 
 .pos {
     display: flex;
@@ -82,6 +90,7 @@ footer {
     padding: 0.5em 0em 0.5em 0em;
     margin-top: 2em;
     text-align: center;
+    background-image: linear-gradient(to bottom, #6cc5d9,#083359)
 }
 
 footer p {
@@ -92,7 +101,11 @@ li {
     list-style-type: none;
 }
 
-a {
+li a {
+    font-size: 2em;
+}
+
+.boton {
     text-decoration: none;
     color: #083359;
     border-style: solid;
@@ -101,7 +114,7 @@ a {
     border-color: #083359;
 }
 
-a:hover {
+.boton:hover {
     text-decoration: none;
     color: #083359;
     border-style: solid;
@@ -117,7 +130,7 @@ div a {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 2em;
     color: #86a641;
     display: flex;
     align-items: baseline;
@@ -166,10 +179,10 @@ figcaption {
 
 .carrusel {
     background-color: #d6d6d6;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 }
 
 iframe {
@@ -186,7 +199,7 @@ article {
 }
 
 label {
-    font-size: 2em;
+    font-size: 1em;
 }
 
 form div {
@@ -211,7 +224,7 @@ form div {
 
 .medicamento {
     padding: 1em 1em 1em 1em;
-    height: 9em;
+    height: 16em;
 }
 
 /*tablet*/
@@ -237,14 +250,19 @@ form div {
 
     header {
         grid-area: header;
+        background-color: #083359;
     }
-    
+
+    nav{
+        background-image: linear-gradient(to bottom, #6cc5d9, #6cc5d9)
+    }
+
     picture img {
         height: 10em;
         width: 10em;
     }
 
-    header,
+    /* header,
     header div,
     ul {
         flex-direction: column;
@@ -255,7 +273,7 @@ form div {
 
     nav{
         position: fixed;
-    }
+    } */
 
     li {
         margin: 1em 0 2em 0;
@@ -294,6 +312,7 @@ form div {
     }
 
     footer {
+        background-image: linear-gradient(to bottom, #083359, #083359 );
         grid-area: footer;
         text-align: center;
         padding: 2em 0 0 0 ;
@@ -307,14 +326,14 @@ form div {
         margin-bottom: 2em;
     }
 
-    a {
+    /* a {
         text-decoration: none;
         color: #083359;
         border-style: solid;
         border-radius: 1em;
         padding: 0.3em;
         border-color: #083359;
-    }
+    } */
 
     iframe {
         margin-bottom: 1em;
@@ -353,8 +372,26 @@ form div {
         display: flex;
         flex-direction: column;
     }
+
+.boton {
+    text-decoration: none;
+    color: #083359;
+    border-style: none;
+    border-radius: 1em;
+    padding: 0.3em;
+    border-color: #083359;
 }
 
+.boton:hover {
+    text-decoration: none;
+    color: #083359;
+    border-style: none;
+    border-radius: 1em;
+    padding: 0.3em;
+    border-color: #86a641;
+    background-color: rgb(63, 141, 63);
+}
+}
 /*mobile*/
 
 @media (max-width:640px){
@@ -372,7 +409,7 @@ form div {
     width: 100%;
     }
 
-    header {
+    /* header {
         background-color: #083359;
         display: flex;
         flex-direction: column;
@@ -390,13 +427,13 @@ form div {
         width: 100%;
         padding: 0 0 2em 0;
         margin-top: 1em;
-    }
+    } */
 
-    nav{ 
+    /* nav{ 
         position: sticky;
         top: 0;
         width: 90%;
-    }
+    } */
 
     ul{
         display: flex;
